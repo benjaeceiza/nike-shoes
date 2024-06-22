@@ -14,6 +14,8 @@ const color7 = document.getElementById("color7");
 
 
 
+
+
 function showSlide(i) {
     color1.className = "colores__img";
     color2.className = "colores__img";
@@ -53,10 +55,21 @@ function showSlide(i) {
             break;
 
     }
+
+    
 }
+
 
 prev.addEventListener('click', () => showSlide(index - 1));
 next.addEventListener('click', () => showSlide(index + 1));
+
+color1.onclick = () => showSlide(0)
+color2.onclick = () => showSlide(1)
+color3.onclick = () => showSlide(2)
+color4.onclick = () => showSlide(3)
+color5.onclick = () => showSlide(4)
+color6.onclick = () => showSlide(5)
+color7.onclick = () => showSlide(6)
 
 
 showSlide(index);

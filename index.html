@@ -9,51 +9,55 @@
 
 </head>
 
-<body class="body-main">
-    <div class="slider">
+<body>
+    <div class="contenedor">
         <div class="logo-boton-ver">
-            <img src="./assets/logo-nike.png" alt="Logo Nike">
-            <a class="boton-ver" href="index.html">Ver Más</a>
+            <a href=""><img src="./assets/logo-nike.png" alt="Logo Nike"></a>
+            <button class="boton-ver"> Ver Más</button>
         </div>
-        
-        <div class="slides">
-            <div class="slide" data-color="rgb(163,18,45)">
-                <img src="./assets/nike-jordan1.png" alt="Image 1">
-                <div class="sombra"></div>
+        <div class="contenedor-slider">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide" data-color="rgb(163,18,45)">
+                        <img src="./assets/nike-jordan1.png" alt="Image 1">
+                        <div class="sombra"></div>
+                    </div>
+                    <div class="slide" data-color="rgb(104,79,162)">
+                        <img src="./assets/nike-jordan2.png" alt="Image 2">
+                        <div class="sombra"></div>
+                    </div>
+                    <div class="slide" data-color="rgb(189,115,110)">
+                        <img src="./assets/nike-jordan3.png" alt="Image 3">
+                        <div class="sombra"></div>
+                    </div>
+                    <div class="slide" data-color="rgb(2,90,107)">
+                        <img src="./assets/nike-jordan4.png" alt="Image 4">
+                        <div class="sombra"></div>
+                    </div>
+                    <div class="slide" data-color="rgb(193,155,127)">
+                        <img src="./assets/nike-jordan5.png" alt="Image 5">
+                        <div class="sombra"></div>
+                    </div>
+                    <div class="slide" data-color="rgb(19,16,19)">
+                        <img src="./assets/nike-jordan6.png" alt="Image 6">
+                        <div class="sombra-blanca"></div>
+                    </div>
+                    <div class="slide" data-color="rgb(62,140,191)">
+                        <img src="./assets/nike-jordan7.png" alt="Image 7">
+                        <div class="sombra"></div>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <button class="prev">❮</button>
+                    <button class="next">❯</button>
+                </div>
             </div>
-            <div class="slide" data-color="rgb(104,79,162)">
-                <img src="./assets/nike-jordan2.png" alt="Image 2">
-                <div class="sombra"></div>
-            </div>
-            <div class="slide" data-color="rgb(189,115,110)">
-                <img src="./assets/nike-jordan3.png" alt="Image 3">
-                <div class="sombra"></div>
-            </div>
-            <div class="slide" data-color="rgb(2,90,107)">
-                <img src="./assets/nike-jordan4.png" alt="Image 4">
-                <div class="sombra"></div>
-            </div>
-            <div class="slide" data-color="rgb(193,155,127)">
-                <img src="./assets/nike-jordan5.png" alt="Image 5">
-                <div class="sombra"></div>
-            </div>
-            <div class="slide" data-color="rgb(19,16,19)">
-                <img src="./assets/nike-jordan6.png" alt="Image 6">
-                <div class="sombra-blanca"></div>
-            </div>
-            <div class="slide" data-color="rgb(62,140,191)">
-                <img src="./assets/nike-jordan7.png" alt="Image 7">
-                <div class="sombra"></div>
-            </div>
-        </div>
-        <div class="navigation">
-            <button class="prev">❮</button>
-            <button class="next">❯</button>
-        </div>
 
+
+        </div>
         <div class="colores">
             <ul class="colores__lista">
-                <li class="colores__item"><img id="color1" class="colores__img" src="./assets/color-shoes/color1.png"
+                <li id="item1" class="colores__item"><img id="color1" class="colores__img" src="./assets/color-shoes/color1.png"
                         alt=""></li>
                 <li class="colores__item"><img id="color2" class="colores__img" src="./assets/color-shoes/color2.png"
                         alt=""></li>
@@ -69,21 +73,17 @@
                         alt=""></li>
             </ul>
         </div>
-
+       
         <div class="logo-boton-ver-mob">
             <img src="./assets/logo-nike.png" alt="Logo Nike">
             <a class="boton-ver" href="index.html">Ver Más</a>
         </div>
-
     </div>
-
-
 
     <script src="js/slider.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>

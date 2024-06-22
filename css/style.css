@@ -1,33 +1,44 @@
-.body-main {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body {
     transition: background-color 0.5s ease;
+}
+
+.contenedor {
     background-image: url(../assets/fondo-jordan2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+
+}
+
+.contenedor-slider {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+
+
+
 }
 
 .logo-boton-ver {
-  position: absolute;
-    width: 90%;
+
+    width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 
 }
 
-.logo-boton-ver-mob{
- display: none;
+.logo-boton-ver-mob {
+    display: none;
 }
 
 .boton-ver {
+
     text-decoration: none;
-   color:black;
+    color: black;
     padding: 20px 30px;
     background-color: white;
     border-radius: 10px;
@@ -39,26 +50,36 @@
     width: 100%;
     overflow: hidden;
 
+
+
 }
 
 .slides {
+    height: 700px;
     display: flex;
     transition: transform 0.5s ease;
+    align-items: center;
+   
+   
 }
 
 .slide {
     min-width: 100%;
     text-align: center;
+
 }
 
 .slide img {
     transform: rotate(-25deg);
-    height: 60vw;
+    height: 600px;
+
+
 }
 
 .sombra {
-    width: 50vw;
-    height: 50px;
+
+    width: 35vw;
+    height: 40px;
     background-color: rgba(0, 0, 0, 0.76);
     margin: 0 auto 30px auto;
     border-radius: 50%;
@@ -68,8 +89,8 @@
 }
 
 .sombra-blanca {
-    width: 50vw;
-    height: 50px;
+    width: 35vw;
+    height: 40px;
     background-color: rgba(255, 251, 251, 0.781);
     margin: 0 auto 30px auto;
     border-radius: 50%;
@@ -103,6 +124,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 270px;
 
 
 }
@@ -113,7 +135,7 @@
 }
 
 .colores__img {
-    height: 50px;
+    height: 35px;
     border-radius: 10px;
     border: solid 2px rgb(175, 172, 172)
 }
@@ -123,24 +145,19 @@
 }
 
 
-@media(max-width:1200px) {
 
-    .logo-boton-ver{
-        position: relative;
-    }
-}
 @media(max-width:560px) {
 
-    .logo-boton-ver{
-      display: none;
+    .logo-boton-ver {
+        display: none;
     }
 
-    .logo-boton-ver-mob{
+    .logo-boton-ver-mob {
         display: flex;
         flex-direction: column;
     }
 
-    .boton-ver{
+    .boton-ver {
         text-align: center;
         width: 50%;
         margin: auto;
@@ -148,24 +165,31 @@
 
 
 
-    .body-main{
+    .contenedor {
         background-position: top;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
-    .slider{
-        margin-top: 100%;
+    .slider {
+        margin-top: 150%;
     }
 
-    .slide img{
+    .slide img {
         height: 100vw;
     }
 
-    .colores__item{
+
+
+
+    .colores__item {
         margin: 0px;
         justify-content: center;
-        flex-wrap:wrap-reverse
+        flex-wrap: wrap-reverse
     }
+
     .colores__lista {
-       justify-content: space-between;
+        justify-content: space-evenly;
+
     }
 }
