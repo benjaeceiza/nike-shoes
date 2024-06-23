@@ -12,7 +12,8 @@ const color5 = document.getElementById("color5");
 const color6 = document.getElementById("color6");
 const color7 = document.getElementById("color7");
 
-
+const footer = document.getElementById("footer")
+const footerInfo = document.getElementById("footer-informativo");
 
 
 
@@ -33,25 +34,32 @@ function showSlide(i) {
     switch (index) {
         case 0:
             color1.className = "colores__img brillo";
+            footer.className = "footer-fondo1";
             break;
         case 1:
             color2.className = "colores__img brillo";
+            footer.className = "footer-fondo2";
             break;
         case 2:
             color3.className = "colores__img brillo";
+            footer.className = "footer-fondo3";
             break;
         case 3:
             color4.className = "colores__img brillo";
+            footer.className = "footer-fondo4";
             break;
         case 4:
             color5.className = "colores__img brillo";
+            footer.className = "footer-fondo5";
             break;
         case 5:
             color6.className = "colores__img brillo";
+            footer.className = "footer-fondo6";
             break;
 
         case 6:
             color7.className = "colores__img brillo";
+            footer.className = "footer-fondo7";
             break;
 
     }
