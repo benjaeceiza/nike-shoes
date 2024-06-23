@@ -56,6 +56,7 @@ body {
 
 .slides {
     height: 700px;
+    width: 100%;
     display: flex;
     transition: transform 0.5s ease;
     align-items: center;
@@ -118,13 +119,61 @@ body {
 
 }
 
+.contenedor-talle-color{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    
+   
+}
+
+.talles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    margin-right:79%;
+
+}
+
+.sizes-p{
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bolder;
+    
+}
+
+.talles__lista{
+    display: flex;
+    list-style:none;
+    align-items: center;
+    flex-wrap: wrap;
+   width: 250px;
+    
+}
+
+.talles__item{
+    text-align: center;
+    width: 20px;
+    color: white;
+    margin: 5px;    
+    font-size: 15px;
+    padding: 14px 14px;
+    border-radius: 10px;
+    border: 2px solid white;
+    
+}
+
 
 .colores__lista {
     list-style: none;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 270px;
+    
 
 
 }
@@ -146,8 +195,35 @@ body {
 
 
 
-@media(max-width:560px) {
+@media(max-width:900px) {
+    .contenedor-talle-color{
+    flex-direction: column-reverse;
+    border: solid 2px rgba(255, 255, 255, 0.596);
+    border-radius: 10px;
 
+     
+    }
+    .talles{
+       position: relative;
+        margin: 0;
+    }
+
+   
+}
+
+@media(max-width:560px) {
+    .contenedor {
+        background-position: top;
+       
+        justify-content: space-around;
+    }
+     
+    
+    .contenedor-talle-color{
+        margin-top: 400px;
+      
+         
+    }
     .logo-boton-ver {
         display: none;
     }
@@ -165,31 +241,41 @@ body {
 
 
 
-    .contenedor {
-        background-position: top;
-        flex-direction: column;
-        justify-content: space-around;
-    }
+ 
 
     .slider {
-        margin-top: 150%;
+        position: relative;
+        margin-top: 120%;
+        
     }
 
     .slide img {
         height: 100vw;
     }
+    
+    .sombra{
+        width: 50vw;
+    }
 
+    .sombra-blanca{
+        width: 50vw;
+    }
 
-
+    
 
     .colores__item {
-        margin: 0px;
+        margin: 5px;
         justify-content: center;
         flex-wrap: wrap-reverse
     }
 
-    .colores__lista {
-        justify-content: space-evenly;
+   
+}
 
+@media(max-width:420px){
+    .colores__item {
+        margin: 0px;
+       
     }
+
 }
